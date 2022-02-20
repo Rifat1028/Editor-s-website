@@ -1,0 +1,162 @@
+.inner_content > h1 {
+  text-align: center;
+  background-color: beige;
+  padding: 20px;
+  margin: 25px;
+  margin-top: -8px;
+}
+
+.order_boxes {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+.normal,
+.order_boxes > textarea,
+.order_boxes > select {
+  text-align: left;
+  padding: 10px;
+  width: 50%;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.order_boxes > select {
+  width: 51.5%;
+  border: 1px solid #777;
+}
+
+.btn_upload {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  color: black;
+  border: 1px solid black;
+  background-color: greenyellow;
+  border: 1px solid yellowgreen;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.btn_upload:hover,
+.btn_upload:focus {
+  background-color: yellowgreen;
+}
+
+.btn_upload input {
+  cursor: pointer;
+  height: 100%;
+  filter: alpha(opacity=1);
+}
+
+.it {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.btn-rmv1 {
+  display: none;
+}
+
+.rmv {
+  cursor: pointer;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+  background: rgba(255, 0, 0, 1);
+  margin: -5px -10px;
+}
+
+.rmv:hover {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.upload_button {
+  background-color: #666;
+  background: greenyellow;
+}
+
+.upload_button:hover {
+  background: yellowgreen;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+
+  font-size: 15px;
+}
+
+option {
+  text-align: center;
+  background-color: aquamarine;
+  font-size: 20px;
+}
+
+.check {
+  margin: 0px 24.25%;
+  width: 51.5%;
+  border: 1px solid #777;
+  padding-bottom: 25px;
+}
+
+.check > p {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+textarea {
+  background-color: rgb(227, 236, 217);
+}
+
+textarea:focus {
+  background: white;
+}
+
+.order_submit_button {
+  width: 10%;
+  margin-right: 24%;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: greenyellow;
+  color: #000;
+  float: right;
+}
+
+.order_submit_button:hover {
+  background-color: #555;
+  color: greenyellow;
+}
+
+@media only screen and (max-width: 720px) {
+  .order_submit_button {
+    width: 52%;
+  }
+  .order_boxes {
+    padding-bottom: 15%;
+  }
+
+  .order_boxes > select {
+    width: 54%;
+  }
+
+  .check {
+    margin: 0px 23%;
+    width: 53.5%;
+  }
+}

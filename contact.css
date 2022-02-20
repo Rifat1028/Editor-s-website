@@ -1,0 +1,83 @@
+.heading span {
+  color: aquamarine;
+}
+
+.heading {
+  color: greenyellow;
+}
+
+.inner_content > h1 {
+  background-color: darkcyan;
+  text-align: center;
+  padding: 20px;
+  margin: 25px;
+  margin-top: -8px;
+}
+
+.main_content {
+  width: 100%;
+  display: flex;
+}
+
+.contact_boxes {
+  width: 50%;
+  padding-left: 25px;
+  padding-bottom: 5%;
+}
+
+.contact_boxes > input,
+.contact_boxes > textarea {
+  padding: 8px;
+  width: 70%;
+}
+
+.contact_boxes > textarea {
+  background-color: antiquewhite;
+}
+
+.contact_boxes > textarea:focus {
+  background-color: white;
+}
+
+.contact_submit_button {
+  width: 30%;
+  margin: 20px 0px;
+  padding: 5px;
+  padding-top: auto;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  float: left;
+  background-color: greenyellow;
+  color: #000;
+}
+
+.contact_submit_button:hover {
+  background-color: #555;
+  color: greenyellow;
+}
+
+.contact_info {
+  width: 50%;
+}
+
+@media only screen and (max-width: 720px) {
+  .main_content {
+    display: grid;
+    text-align: center;
+  }
+  .contact_info {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+
+  .contact_boxes {
+    width: 97%;
+  }
+
+  .contact_boxes > p {
+    width: auto;
+  }
+}

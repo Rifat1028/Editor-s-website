@@ -1,0 +1,175 @@
+.inner_top {
+  float: left;
+  background-color: papayawhip;
+  margin: -8px;
+  margin-top: -29px;
+  margin-bottom: 2%;
+}
+
+.info {
+  float: left;
+  width: 40%;
+  padding: 0px 2%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 4%;
+  margin: 2%;
+}
+
+.info_home1 {
+  float: left;
+  width: 30%;
+  padding: 0px 2%;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #555;
+  margin-bottom: 4%;
+  margin: 2%;
+  margin-top: 5%;
+  background: paleturquoise;
+}
+
+.info > p,
+.info_home1 > p {
+  padding-bottom: 10%;
+}
+
+.try_button {
+  padding: 8px 35px;
+  margin-left: 35%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  border: 2px solid rgb(218, 93, 218);
+  background-color: violet;
+  color: black;
+}
+
+.try_button:hover {
+  background-color: rgb(218, 93, 218);
+}
+
+.process_title > h2 {
+  color: greenyellow;
+  text-align: center;
+  font-size: 35px;
+}
+
+.info_home2 {
+  float: left;
+  width: 25%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #555;
+  border: 2px solid black;
+  margin-bottom: 4%;
+  margin-left: 2%;
+}
+
+.info_home21 > i {
+  font-size: 50px;
+  color: greenyellow;
+  height: 70px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  width: 80px;
+  text-align: center;
+  padding-top: 17px;
+  margin-top: 15px;
+}
+
+.info_home21 {
+  float: left;
+  width: 30%;
+}
+
+.info_home22 {
+  float: left;
+  width: 60%;
+}
+
+.title > h2 {
+  color: #444444;
+  background: #ffffff;
+
+  text-align: center;
+  font-size: 35px;
+}
+
+.title > h2::after {
+  content: "";
+  margin: auto;
+  height: 3px;
+  display: block;
+  background: grey;
+  width: 60%;
+}
+
+.title > h2:hover:after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: greenyellow;
+  transition: 1500ms;
+  width: 100%;
+}
+
+.inner_content > h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.heading span {
+  color: aquamarine;
+}
+
+.heading {
+  color: greenyellow;
+}
+
+._services {
+  padding-left: 3%;
+}
+
+._services > .row {
+  width: 50%;
+  float: left;
+}
+
+.info2 {
+  float: left;
+  width: 25%;
+  padding: 0px 2%;
+  text-align: center;
+  color: #555;
+  margin-bottom: 4%;
+  margin: 2%;
+}
+
+.blank_space {
+  width: 100%;
+  margin-top: 5%;
+  float: left;
+}
+
+p > i {
+  color: green;
+}
+
+@media only screen and (max-width: 720px) {
+  .info,
+  .info2,
+  .info_home1,
+  .info_home2 {
+    width: 90%;
+  }
+
+  ._services > .row {
+    width: 100%;
+  }
+}

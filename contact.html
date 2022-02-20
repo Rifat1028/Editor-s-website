@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="http://tinypic.com?ref=261kfht">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="demo_logo.png" />
+    <script src="on_top_button.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="top_bar">
+        <div class="container">
+            <h5><i class="fa fa-envelope-open"></i>
+                 info@gmail.com
+           </h5>
+           <h5><i class="fa fa-phone"></i>
+                 01700102800
+           </h5>
+        </div>
+        <div class='social_media'>
+            <button class="button" onclick="window.location.href='https://www.facebook.com'"><i class="fa fa-facebook"></i></button>
+            <button class="button" onclick="window.location.href='https://twitter.com'"><i class="fa fa-twitter"></i></button>
+            <button class="button" onclick="window.location.href='https://www.instagram.com'"><i class="fa fa-instagram"></i></button>
+        </div>        
+    </div>
+
+    <nav class="top_menu">
+            <img src="demo_logo.png" alt="logo"">
+        <ul>
+            <li><a  onclick="window.location.href='home.html'">Home</a></li>
+            <div class="services">
+                <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
+                <div class="services_content">
+                  <div class="row">
+                    <div class="column">
+                        <a onclick="window.location.href='service1.html'">service1</a>
+                        <a onclick="window.location.href='service2.html'">service2</a>
+                        <a onclick="window.location.href='service3.html'">service3</a>
+                      </div>
+                      <div class="column">
+                        <a onclick="window.location.href='service4.html'">service4</a>
+                        <a onclick="window.location.href='service5.html'">service5</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <li><a onclick="window.location.href='order.html'">Order</a></li>
+            <li><a onclick="window.location.href='payment.html'">Payment</a></li>
+            <li><a onclick="window.location.href='priceing.html'">Priceing</a></li>
+            <li><a class="active" onclick="window.location.href='contact.html'">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="inner_content">
+        <h1 class="heading"><span>Contact </span>Us</h1>
+        <div class="main_content">
+            <form class="contact_boxes" action="contact.php" method="post">
+                <p>Name(required)</p>
+                <input type="text" name="name" id="name" required oninvalid="this.setCustomValidity('Enter your name')">
+                <p>Email(required)</p>
+                <input type="text" name="payer_name" id="name" required oninvalid="this.setCustomValidity('Enter your email id')">
+                <p>Address</p>
+                <input type="text" name="address" id="address">
+                <p>Phone No.</p>
+                <input type="text" name="phone_no" id="phone_no">                
+                <p>website</p>
+                <input type="text" name="website_name" id="website_name">
+                <p>Subject(required)</p>
+                <input type="text" name="subject" id="subject" required oninvalid="this.setCustomValidity('Enter a subject')">
+                <p>Massage(required)</p>
+                <textarea name="massage" id="massage" cols="30" rows="5" required oninvalid="this.setCustomValidity('Add some comment please')"></textarea> 
+                <button class="contact_submit_button" id="submit" >Submit</button>     
+            </form>
+            <div class="contact_info">
+                <h2>1st office</h2>
+                <p>office location</p>
+                <h2>2nd office</h2>
+                <p>office location</p>
+                <h2>3rd office</h2>
+                <p>office location</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom_layout">
+        <div class="bottom_top_bar">
+            <a class="down_button" href='https://www.facebook.com'" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="down_button" href='https://twitter.com'" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="down_button" href='https://www.instagram.com'" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <div class="bottom_intro">
+            <div class='intro'>
+                <h4>Demo</h4>
+                <p>It's a demo website.Testing if all the contents are ok.</p>
+            </div>
+            <div class="bottom_service_info">
+                <h4>Services</h4>
+                <p onclick="window.location.href='service1.html'">service1</p>
+                <p onclick="window.location.href='service2.html'">service2</p>
+                <p onclick="window.location.href='service3.html'">service3</p>
+                <p onclick="window.location.href='service4.html'">service4</p>
+            </div>
+            <div class="offer">
+                <h4>Enter your email to get offer</h4>
+                <form action="gift_offer.php" method="post">
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <button class="submit_button" id="submit">Submit</button>     
+                </form>
+            </div>
+            <div class="office">
+                <h4>1st office</h4>
+                <p>office location</p>
+                <h4>2nd office</h4>
+                <p>office location</p>
+            </div>
+        </div>
+
+        <div class="bottom_bar">
+            <p>copyright</p>
+            <div class="bottom_menu">
+                    <a onclick="window.location.href='home.html'">Home</a>
+                    <a onclick="window.location.href='about.html'">About</a>
+                    <a onclick="window.location.href='priceing.html'">Priceing</a>
+                    <a onclick="window.location.href='contact.html'">Contact</a>  
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <script src="on_top_button.js"></script>
+    <script src="counter.js"></script>
+
+</body>
+</html>
